@@ -1,39 +1,34 @@
 // countupdown function
 
-function CountUpDown() {
-  const totalTaskElement = document.getElementById("total-task");
-  const remainTaskElement = document.getElementById("remain-task");
+// function CountUpDown() {
+//   const totalTaskElement = document.getElementById("total-task");
+//   const remainTaskElement = document.getElementById("remain-task");
 
-  // if (!totalTaskElement || !remainTaskElement) {
-  //     console.error("Element not found!");
-  //     Swal.fire({
-  //         icon: "error",
-  //         title: "Oops...",
-  //         text: "Element not found!",
-  //       });
-  //     return;
-  // }
+//   let totalTask = parseInt(totalTaskElement.innerText) || 0;
+//   let remainTask = parseInt(remainTaskElement.innerText) || 0;
+//   console.log(remainTask)
 
-  let totalTask = parseInt(totalTaskElement.innerText) || 0;
-  let remainTask = parseInt(remainTaskElement.innerText) || 0;
+//   if (remainTask > 0) {
+//     totalTask += 1;
+//     remainTask -= 1;
 
-  if (remainTask > 0) {
-    totalTask += 1;
-    remainTask -= 1;
+//     totalTaskElement.innerText = totalTask;
+//     remainTaskElement.innerText = remainTask;
+//     console.log("remainTask")
 
-    totalTaskElement.innerText = totalTask;
-    remainTaskElement.innerText = remainTask;
-  } 
+//   } 
   
-  else {
-    Swal.fire({
-      icon: "error",
-      title: "Oops...",
-      text: "No remaining tasks!",
-    });
-    return;
-  }
-}
+//   else {
+    
+//     Swal.fire({
+//         icon: "error",
+//         title: "Oops...",
+//         text: "All tasks have been completed!",
+        
+//       });
+//     return;
+//   }
+// }
 
 
 
@@ -43,7 +38,33 @@ function CountUpDown() {
 document
   .getElementById("fix-mobile-button-issue")
   .addEventListener("click", function () {
-    CountUpDown();
+    const totalTaskElement = document.getElementById("total-task");
+    const remainTaskElement = document.getElementById("remain-task");
+  
+    let totalTask = parseInt(totalTaskElement.innerText) || 0;
+    let remainTask = parseInt(remainTaskElement.innerText) || 0;
+    console.log(remainTask)
+  
+    if (remainTask > 0) {
+      totalTask += 1;
+      remainTask -= 1;
+  
+      totalTaskElement.innerText = totalTask;
+      remainTaskElement.innerText = remainTask;
+      console.log("remainTask")
+  
+    } 
+    
+    else {
+      
+    Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "All tasks have been completed!",
+        
+      });
+    return;
+    }
 
     const historySection = document.getElementById("history-section");
     const history = document.createElement("div");
@@ -74,7 +95,34 @@ document
 document
   .getElementById("add-dark-mode")
   .addEventListener("click", function () {
-    CountUpDown();
+    const totalTaskElement = document.getElementById("total-task");
+    const remainTaskElement = document.getElementById("remain-task");
+  
+    let totalTask = parseInt(totalTaskElement.innerText) || 0;
+    let remainTask = parseInt(remainTaskElement.innerText) || 0;
+    console.log(remainTask)
+  
+    if (remainTask > 0) {
+      totalTask += 1;
+      remainTask -= 1;
+  
+      totalTaskElement.innerText = totalTask;
+      remainTaskElement.innerText = remainTask;
+      console.log("remainTask")
+  
+    } 
+    
+    else {
+     
+      
+    Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "All tasks have been completed!",
+        
+      });
+    return;
+    }
 
     const historySection = document.getElementById("history-section");
     const history = document.createElement("div");
@@ -105,7 +153,34 @@ document
 document
   .getElementById("optimiz-home-page")
   .addEventListener("click", function () {
-    CountUpDown();
+    const totalTaskElement = document.getElementById("total-task");
+  const remainTaskElement = document.getElementById("remain-task");
+
+  let totalTask = parseInt(totalTaskElement.innerText) || 0;
+  let remainTask = parseInt(remainTaskElement.innerText) || 0;
+  console.log(remainTask)
+
+  if (remainTask > 0) {
+    totalTask += 1;
+    remainTask -= 1;
+
+    totalTaskElement.innerText = totalTask;
+    remainTaskElement.innerText = remainTask;
+    console.log("remainTask")
+
+  } 
+  
+  else {
+   
+    
+    Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "All tasks have been completed!",
+        
+      });
+    return;
+  }
 
     const historySection = document.getElementById("history-section");
     const history = document.createElement("div");
@@ -137,7 +212,34 @@ document
 document
   .getElementById("add-new-emoji")
   .addEventListener("click", function () {
-    CountUpDown();
+    const totalTaskElement = document.getElementById("total-task");
+    const remainTaskElement = document.getElementById("remain-task");
+  
+    let totalTask = parseInt(totalTaskElement.innerText) || 0;
+    let remainTask = parseInt(remainTaskElement.innerText) || 0;
+    console.log(remainTask)
+  
+    if (remainTask > 0) {
+      totalTask += 1;
+      remainTask -= 1;
+  
+      totalTaskElement.innerText = totalTask;
+      remainTaskElement.innerText = remainTask;
+      console.log("remainTask")
+  
+    } 
+    
+    else {
+     
+      
+    Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "All tasks have been completed!",
+        
+      });
+    return;
+    }
 
     const historySection = document.getElementById("history-section");
     const history = document.createElement("div");
@@ -168,7 +270,33 @@ document
 document
   .getElementById("intergrate-openai")
   .addEventListener("click", function () {
-    CountUpDown();
+    const totalTaskElement = document.getElementById("total-task");
+    const remainTaskElement = document.getElementById("remain-task");
+  
+    let totalTask = parseInt(totalTaskElement.innerText) || 0;
+    let remainTask = parseInt(remainTaskElement.innerText) || 0;
+    console.log(remainTask)
+  
+    if (remainTask > 0) {
+      totalTask += 1;
+      remainTask -= 1;
+  
+      totalTaskElement.innerText = totalTask;
+      remainTaskElement.innerText = remainTask;
+      console.log("remainTask")
+  
+    } 
+    
+    else {
+     
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "All tasks have been completed!",
+            
+          });
+        return;
+    }
 
     const historySection = document.getElementById("history-section");
     const history = document.createElement("div");
@@ -198,7 +326,34 @@ document
 document
   .getElementById("improve-job-searching")
   .addEventListener("click", function () {
-    CountUpDown();
+    const totalTaskElement = document.getElementById("total-task");
+  const remainTaskElement = document.getElementById("remain-task");
+
+  let totalTask = parseInt(totalTaskElement.innerText) || 0;
+  let remainTask = parseInt(remainTaskElement.innerText) || 0;
+  console.log(remainTask)
+
+  if (remainTask > 0) {
+    totalTask += 1;
+    remainTask -= 1;
+
+    totalTaskElement.innerText = totalTask;
+    remainTaskElement.innerText = remainTask;
+    console.log("remainTask")
+
+  } 
+  
+  else {
+   
+    
+    Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "All tasks have been completed!",
+        
+      });
+    return;
+  }
 
     const historySection = document.getElementById("history-section");
     const history = document.createElement("div");
