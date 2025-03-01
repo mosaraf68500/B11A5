@@ -28,7 +28,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
   </head>
-  <body class="bg-[#F4F7FF] min-h-screen ">
+  <body class="bg-[#F4F7FF] min-h-screen pb-10">
     <header class="w-11/12 mx-auto rounded-md">
       <div class="navbar bg-white px-4 shadow-sm rounded-lg">
         <div class="flex-1 flex items-center">
@@ -41,7 +41,7 @@
               <img class="w-6" src="./assets/checkbox.png" alt="" />
               <h1 id="total-task" class="text-xl font-semibold">23</h1>
             </div>
-            <div>
+            <div id="colorButton" class="cursor-pointer">
               <img class="w-7" src="./assets/theme-btn.png" alt="" />
             </div>
           </div>
@@ -81,15 +81,12 @@
 
             <!-- ses er  div  -->
             <div
-              class="flex-1 rounded-lg p-3 flex gap-2 items-center justify-center bg-[#F4F7FF]"
+              class="flex-1 w-full h-full rounded-lg p-3 flex gap-2 items-center justify-center bg-[#F4F7FF]"
             >
               <img class="w-6 h-6" src="./assets/calender.png" alt="" />
 
-              <div class="">
-                <p>
-                  Wed , <br />
-                  Jul 28 2025
-                </p>
+              <div class="text-md" id="formateDate">
+                
               </div>
             </div>
 
@@ -315,5 +312,7 @@
     <footer></footer>
 
     <script src="./js/javaScript.js"></script>
+    <script src="./js/date.js"></script>
+    <script src="./js/bg-color.js"></script>
   </body>
 </html>

@@ -23,9 +23,9 @@
     <link rel="stylesheet" href="style.css" />
 
     <!-- Sweet Alert -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
   </head>
-  <body class="bg-[#F4F7FF] min-h-screen">
+  <body class="bg-[#F4F7FF] pb-10">
     <header class="w-11/12 mx-auto rounded-md">
       <div class="navbar bg-white px-4 shadow-sm rounded-lg">
         <div class="flex-1 flex items-center">
@@ -33,10 +33,109 @@
           <a class="btn btn-ghost text-xl">Dev <span>Board</span></a>
         </div>
         <div class="flex-none">
-          <button id="back" class="bg-[#3752FD] px-3 py-2 text-white cursor-pointer rounded-lg"> Back to Desk</button>
+          <button
+            id="back"
+            class="bg-[#3752FD] px-3 py-2 text-white cursor-pointer rounded-lg"
+          >
+            Back to Desk
+          </button>
         </div>
       </div>
     </header>
+    <main class="w-11/12 mx-auto space-y-4 ">
+      <h1 class="text-center mt-4 text-xl font-bold">Blogs</h1>
+
+      <section class="bg-white rounded-lg">
+        <h1 class="text-lg font-semibold p-2">
+          Question-1: What are the different ways to select an element in the
+          DOM?
+        </h1>
+        <hr />
+        <div class="text-md p-2">
+          In JavaScript, there are several ways to select elements from the DOM.
+          Here are the most common methods:
+          <ul type="i" class="p-2">
+            <li class="font-semibold">1.Selecting by ID (getElementById)</li>
+            <li class="font-semibold">2. Selecting by Class Name (getElementsByClassName)</li>
+            <li class="font-semibold">Selecting by Tag Name (getElementsByTagName)</li>
+            <li class="font-semibold">Selecting Multiple Elements (querySelectorAll)</li>
+            <li class="font-semibold">6. Selecting by Name Attribute (getElementsByName)</li>
+            
+          </ul>
+        </div>
+      </section>
+
+      <section class="bg-white rounded-lg">
+        <h1 class="text-lg font-semibold p-2">
+          Question-2: What is the difference between innerHTML, innerText, and
+          textContent ?
+        </h1>
+        <hr />
+        <p class="text-md p-2">
+            <span class="font-semibold">innerHTML:</span>Gets or sets the HTML content (tags included) inside an element. <br>
+            <span class="font-semibold">innerText:</span>  Gets or sets the visible text inside an element (ignores HTML tags). <br>
+            <span class="font-semibold">textContent:</span> Gets or sets all text inside an element, including hidden text (ignores styling).
+
+
+           
+           
+            
+           
+            
+           
+        </p>
+      </section>
+
+      <section class="bg-white rounded-lg">
+        <h1 class="text-lg font-semibold p-2">
+          Question-3: What is event delegation in the DOM?
+        </h1>
+        <hr />
+        <p class="text-md p-2">
+            Event delegation হলো এমন একটি পদ্ধতি, যেখানে একাধিক উপাদানের জন্য আলাদা আলাদা ইভেন্ট লিসেনার না দিয়ে, একটিমাত্র প্যারেন্ট উপাদানে ইভেন্ট লিসেনার যোগ করা হয়। এরপর, প্যারেন্ট উপাদান চাইল্ড উপাদানগুলোর ইভেন্টগুলো ক্যাচ করে।
+        </p>
+      </section>
+
+      <section class="bg-white rounded-lg">
+        <h1 class="text-lg font-semibold p-2">
+          Question-4: What is event bubbling in the DOM?
+        </h1>
+        <hr />
+        <p class="text-md p-2">
+            Event bubbling হলো ডকুমেন্ট অবজেক্ট মডেল (DOM)-এ ইভেন্টের একটি আচরণ। যখন কোনো ইভেন্ট (যেমন, ক্লিক) একটি উপাদানে ঘটে, সেই ইভেন্টটি প্রথমে সেই উপাদানে ঘটবে, তারপর ধীরে ধীরে ওই উপাদানের প্যারেন্ট (মা) উপাদানে এবং তারও উপরের উপাদানগুলোর দিকে বুবল (উত্তোলিত) হবে। এই প্রক্রিয়া চলে যতক্ষণ না এটি ডকুমেন্ট অবজেক্ট মডেলের (DOM) রুটে পৌঁছায়।
+        </p>
+      </section>
+
+      <section class="bg-white rounded-lg">
+        <h1 class="text-lg font-semibold p-2">
+          Question-5: How do you create, add, and remove elements using
+          JavaScript?
+        </h1>
+        <hr />
+        <p class="text-md p-2">
+         <p><span class="font-semibold">1. Creating an Element:</span> <br>To create a new element, use document.createElement(): <br>
+            <span class="font-semibold">example:</span>
+            let newElement = document.createElement('div');  <br>
+                newElement.textContent = 'This is a new element'; 
+        </p>
+
+
+        <p><span class="font-semibold">3.Removing an Element:</span> <br>To remove an element from the DOM, you can use remove() or removeChild(). <br>
+            <span class="font-semibold">example:</span>
+            newElement.remove();   <br>
+            parentElement.removeChild(newElement); 
+        </p>
+
+
+
+        <p><span class="font-semibold">2.Adding an Element:</span> <br>To add the created element to the DOM, you can use appendChild() <br>
+            <span class="font-semibold">example:</span>
+            document.body.appendChild(newElement);   <br>
+            
+        </p>
+        </p>
+      </section>
+    </main>
 
     <script src="./js/javaScript.js" defer></script>
   </body>
